@@ -15,7 +15,6 @@ int main()
         array[i]=rand()%100;
 
     }
-
     for(int i = 0; i < tamanho_array-1; i++){
         int posi1 = array[i];
         for(int j = i; j < tamanho_array; j++){
@@ -27,13 +26,9 @@ int main()
         }
         
     }
-    
-
     indice=busca_binaria(array, numeroteste,  0, tamanho_array-1);
-   
     std::cout<<indice<<'\n'<<'\n';
     delete[] array;
-
     return 0;
 }
 
